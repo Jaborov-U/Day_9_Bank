@@ -14,12 +14,12 @@ func PaymentSourses(cards []types.Card) []types.PaymentSourse {
 		}
 
 		paysourse = append(paysourse, types.PaymentSourse{
-			Type: "card",
-			Number: string(card.PAN),
+			Type:    "card",
+			Number:  string(card.PAN),
 			Balance: card.Balance,
 		})
 	}
 
 	return paysourse
-	
+
 }
